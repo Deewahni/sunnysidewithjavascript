@@ -1,0 +1,55 @@
+.testimonials {
+    text-align: center;
+    padding: 150px 50px;
+
+    .client-title {
+        color: var(--grayish-blue);
+        font-size: 1.3rem;
+        letter-spacing: 5px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        .client-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 30px 0;
+
+            .client-image{
+                max-width: 100px;
+                margin: 20px;
+               img {
+                border-radius: 50%;
+               }
+            }
+
+            .statement{
+                color: var(--very-dark-grayish-blue);
+                font-size: 0.85rem;
+                font-weight: 600;
+                line-height: 1.8;
+                margin: 30px 0;
+            }
+
+            .name{
+                color: var(--very-dark-desaturated-blue);
+                margin: 10px;
+            }
+
+            .calling {
+                color: var(--grayish-blue);
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+
+
+
+

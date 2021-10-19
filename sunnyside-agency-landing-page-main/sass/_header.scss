@@ -1,0 +1,118 @@
+header {
+    background: url('../images/desktop/image-header.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .toggle {
+        display: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+
+        
+        .navs{
+            display: flex;
+        }
+
+        .navi {
+            margin: 2px;
+            padding: .6rem 1.2rem;
+            color: var(--white);
+            border-radius: 40px;
+            transition: 0.5s ease;
+
+            
+           
+        }
+
+        span {
+            font-family: 'Fraunces', serif;
+            background: var(--white);
+            color: var(--very-dark-desaturated-blue);
+            padding: .6rem 1.2rem;
+            border-radius: 40px;
+            transition: 0.5s ease;
+        }
+
+        .navi:hover, span:hover{
+            background: hsla(198, 73%, 72%, 0.767);
+            color: var(--white);
+        }
+    }
+
+  
+
+    
+
+    
+
+    .arrow-down {
+        max-width: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        animation: arrow 2s infinite;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navs {
+        display: none !important;
+        transition: 0.5s linear;
+    }
+
+    .toggle{
+        display: block !important;
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .nav-toggle{
+        display: block !important;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 70px;
+        padding: 50px;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        z-index: 100;
+
+        .navi {
+            display: block;
+            padding: 20px 0 !important;
+            margin: 20px;
+        }
+    }
+
+    
+
+
+
+    
+    
+
+}

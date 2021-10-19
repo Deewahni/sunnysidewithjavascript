@@ -1,0 +1,33 @@
+footer {
+    background: var(--footer);
+    display: grid;
+    place-items: center;
+    padding: 50px;
+
+    a{
+        color: var(--graphic-design-text);
+        padding: 8px;
+        transition: 0.5s ease;
+    }
+
+    a:hover {
+        color:var(--white);
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+    .links, .socmed {
+        margin: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 760px) {
+   .links {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+}
